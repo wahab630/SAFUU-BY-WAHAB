@@ -1,0 +1,51 @@
+.navbar{
+    background-color: #011A01FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #024b05;
+}
+
+.logo-img{
+    height: 30px;
+    width: 190px;
+}
+.navbar a{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: white;
+}
+.header-btn{
+  color: white;
+  width: 201px;
+  height: 60px;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: #34c439;
+  font-size: 30px;
+    cursor: pointer;
+}
+.head-last-btn{
+    background: linear-gradient(90deg,#024b05,#36d33b);
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 #36d63b;
+    border: 2px solid #36d63b;
+    padding: 13px 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.h-second-btn{
+    color: white;
+    font-weight: bold;
+    padding: 9px 26px;
+    cursor: pointer;
+    background: #011101;
+    border-radius: 2px;
+    margin-right: 30px;
+    border: 2px solid #012b04;
+}
+.header-icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}

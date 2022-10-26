@@ -1,0 +1,55 @@
+
+.hero{
+    background-image: url('./media/Hero.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    .card{
+        background-color: transparent;
+       
+        width: 90%;
+    }
+    .other-card{
+        border: 1px solid #024b05;
+    }
+    .s-text{
+        color: #36d33b;
+    }
+    .sidebar-logo{
+        height: 118;
+        width: 122px;
+        display: block;
+        margin: 20px auto;
+    }
+    .side-btn{
+        background: linear-gradient(90deg,#024b05,#36d33b);
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 #36d63b;
+    border: 2px solid #36d63b;
+    padding: 13px 20px;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+    }
+    .side-btn-two{
+        color: white;
+    font-weight: bold;
+    padding: 9px 26px;
+    cursor: pointer;
+    background: #011101;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #012b04;
+    }
+    .second-col{
+   
+    padding-left: 90px;
+    }
+    .to-top{
+        margin-top: 190px;
+    }
+}
