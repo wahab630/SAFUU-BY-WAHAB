@@ -1,19 +1,15 @@
 .navbar{
-    background-color: #011A01FF;
+    background-color: #010901;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 2px solid #024b05;
+    border-bottom: 2px solid #0b6a0e;
 }
 
 .logo-img{
     height: 30px;
     width: 190px;
 }
-.navbar a{
-    font-size: 1rem;
-    text-transform: capitalize;
-    color: white;
-}
+
 .header-btn{
   color: white;
   width: 201px;
