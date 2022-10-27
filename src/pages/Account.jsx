@@ -2,7 +2,15 @@ import React from 'react'
 
 const Account = () => {
   return (
-    <div> this is Account page</div>
+    <>
+    <div className="account">
+      <div className="container">
+        <div className="row">
+          
+        </div>
+      </div>
+    </div>
+    </>
   )
 }
 

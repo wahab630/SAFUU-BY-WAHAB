@@ -1,9 +1,14 @@
+
+// -----------------------------------Hero Page-----------------
 .hero {
   background-image: url("./media/Hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  
+  
+ 
   .card {
     background-color: transparent;
     width: 90%;
@@ -14,16 +19,18 @@
   .s-text {
     color: #36d33b;
   }
-  .second-col {
-    padding-left: 90px;
-  }
+  // .first-col{
+  //   border: 2px solid blue;
+  // }
+  // .second-col{
+  //   border: 2px solid blue;
+  // }
   .to-top {
     margin-top: 190px;
   }
-//   .first-col{
-//     position: fixed;
-//   }
+
 }
+//------------------------------------Dashboard-----------------
 .dashboard{
     background-color: #010901;
     
@@ -57,3 +64,43 @@
         border: 2px solid #012b04;
       }
   }
+//------------------------------------Account Page--------------
+.account{
+  background-image: url("./media/Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+//------------------------------------Swap Page-----------------
+.swap{
+  background-image: url("./media/Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+//-----------------------------------Calculator Page---------------
+.calculator{
+  background-image: url("./media/Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+//-----------------------------------Analytics Page----------------
+.analytics{
+  background-image: url("./media/Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+//------------------------------------Docs Page---------------------
+.docs{
+  background-image: url("./media/Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}

@@ -5,9 +5,10 @@ const Hero = () => {
   return (
     <>
       <div className="container-fluid hero">
+        <div className="container hero-inner">
         <div className="row">
           
-          <div className="col-lg-4 col-12 second-col mt-5">
+          <div className="col-lg-4 col-12 first-col  mt-5">
             <div className="card text-center shadow ">
               <div className="card-body">
                 <h5 className="text-white">Market Value of Treasury Asset</h5>
@@ -33,13 +34,11 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-12 first-col mt-5">
+          <div className="col-lg-3 col-12 second-col  mt-5">
               
           <div className="card text-center mt-4 other-card">
-              <div className="card-body">
-                
-                <button className="btn side-btn-two">
-                
+              <div className="card-body">                
+                <button className="btn side-btn-two">                
                 SAFUU PRICE
               </button>
                 <h5 className="s-text">$1.56</h5>
@@ -55,7 +54,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-12  mt-5">
+          <div className="col-lg-4 col-12 first-col  mt-5">
             <div className="card text-center ">
               <div className="card-body">
                 <h5 className="text-white">Market Value of Treasury Asset</h5>
@@ -81,6 +80,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

@@ -37,28 +37,28 @@ const Dashboard = () => {
               </button>
                 </Link>
 
-                <Link to="/" className="">
+                <Link to="/swap" className="">
               <button className="btn other-btn">
                 <FaExchangeAlt size={20} />
                 <span className="me-3"></span> Swap
               </button>
               </Link>
               
-              <Link to="/" className="">
+              <Link to="/calculator" className="">
               <button className="btn other-btn">
                 <FaCalculator size={20} />
                 <span className="me-3"></span> Calculator
               </button>
               </Link>
 
-              <Link to="/" className="">
+              <Link to="/analytics" className="">
               <button className="btn other-btn">
                 <FaRegMoon size={20} />
                 <span className="me-3"></span> Analytics
               </button>
               </Link>
 
-              <Link to="/" className="">
+              <Link to="/docs" className="">
               <button className="btn other-btn">
                 <FaRegFileAlt size={20} /> <span className="me-3"></span>Docs
               </button>
