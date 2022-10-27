@@ -1,4 +1,6 @@
-
+.base{
+  background-color: #010901;
+}
 // -----------------------------------Hero Page-----------------
 .hero {
   background-image: url("./media/Hero.png");
@@ -7,14 +9,22 @@
   height: 100vh;
   background-attachment: fixed;
   
-  
+  .hero-btn{
+    color: white;
+    font-weight: bold;
+    padding: 9px 26px;
+    cursor: pointer;
+    background: #011101;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #012b04;
+  }
  
   .card {
-    background-color: transparent;
-    width: 90%;
+    background-color: transparent;      
   }
   .other-card {
-    border: 1px solid #024b05;
+    border: 1px solid #024b05;    
   }
   .s-text {
     color: #36d33b;
@@ -26,14 +36,16 @@
   //   border: 2px solid blue;
   // }
   .to-top {
-    margin-top: 190px;
+    margin-top: 180px;
   }
 
 }
 //------------------------------------Dashboard-----------------
 .dashboard{
     background-color: #010901;
-    
+    margin: 0;
+    padding: 0;   
+  
     .dashboard-logo{
         height: 118;
         width: 122px;
@@ -71,6 +83,26 @@
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  .card {
+    background-color: transparent;      
+  }
+  .other-card {
+    border: 1px solid #024b05;    
+  }
+  .center-t{
+    color: #36d33b;
+    font-size: 2.125rem;
+  }
+  .account-h{
+    font-size: 1.5rem;
+  }
+  .account-p{
+    font-weight: 700;
+  }
+  .account-card-first-item{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 //------------------------------------Swap Page-----------------
 .swap{
@@ -79,6 +111,9 @@
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  .swap-center{
+    border: 2px solid #012b04;
+  }
 }
 //-----------------------------------Calculator Page---------------
 .calculator{
