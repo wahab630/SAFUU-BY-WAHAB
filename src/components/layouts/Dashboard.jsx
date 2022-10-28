@@ -10,12 +10,15 @@ import {
 } from "react-icons/fa";
 
 const Dashboard = () => {
+
+ 
+
   return (
     <>
       <div className="dashboard ">
         <div className="container ">
           <div className="row">
-            <div className="col  sidebar-c">
+            <div className="col sticky-top w-100 sidebar-c d-none d-sm-block">
               <div>
                 <img
                   src="https://app.safuu.com/static/media/safuu-logo.ca35646e.png"
@@ -65,6 +68,9 @@ const Dashboard = () => {
                 </Link>
               </div>
             </div>
+           
+
+            
           </div>
         </div>
       </div>

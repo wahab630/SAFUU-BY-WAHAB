@@ -3,6 +3,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 2px solid #0b6a0e;
+    
 }
 
 .logo-img{
@@ -19,6 +20,11 @@
   background-color: #34c439;
   font-size: 30px;
     cursor: pointer;
+}
+.canvas-btn{
+  background-color: #34c439 ;
+  width: 15%;
+ margin-left: -220px;
 }
 .head-last-btn{
     background: linear-gradient(90deg,#024b05,#36d33b);
@@ -45,3 +51,38 @@
     flex-direction: row;
     margin-top: 15px;
 }
+/* .canvas-body{
+    background-color: black !important;
+    width: 50%;
+  }
+  .offcanvas-header{
+    background-color: black;
+    width: 50%;
+  } */
+  .canvas{
+    width: 250px !important;
+    background-color: #010901;
+  }
+  .dashboard-btn {
+    background: linear-gradient(90deg, #024b05, #36d33b);
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 #36d63b;
+    border: 2px solid #36d63b;
+    padding: 13px 20px;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .other-btn {
+    color: white;
+    font-weight: bold;
+    padding: 9px 26px;
+    cursor: pointer;
+    background: #011101;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #012b04;
+  }

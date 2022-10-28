@@ -9,10 +9,10 @@ const Base = (props) => {
     <Header/>
     <div className="container-fluid base  border border-success">
       <div className="row ">
-        <div className="col-lg-2 ">
+        <div className="col-lg-2  p-0">
           <Dashboard/>
         </div>
-        <div className="col-lg-10 pt-5 ">
+        <div className="col-lg-10   p-0">
           {props.children}
         </div>
       </div>

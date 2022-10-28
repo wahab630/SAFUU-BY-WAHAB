@@ -1,15 +1,49 @@
-.base{
-  background-color: #010901;
+$first-color: #024b05;
+$second-color: #36d33b;
+$light-color: #d0dce8;
+.base {
+  // background-color: #010901;
+  
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ body{
+  overflow-x: hidden;
+ }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $second-color; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $second-color; 
+}
+.card {
+  background-color: transparent;
 }
 // -----------------------------------Hero Page-----------------
 .hero {
   background-image: url("./media/Hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
+  h5{
+    font-weight: 700;
+  }
   
-  .hero-btn{
+  .hero-btn {
     color: white;
     font-weight: bold;
     padding: 9px 26px;
@@ -19,12 +53,21 @@
     margin-bottom: 5px;
     border: 2px solid #012b04;
   }
- 
-  .card {
-    background-color: transparent;      
+  .text-in-circle{
+    color: $second-color;
+    font-weight: bold;
+    display: block;
+    margin-top: 45px;
+  }
+  .circle-card{
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin: auto;
+        border-radius: 100%;
   }
   .other-card {
-    border: 1px solid #024b05;    
+    border: 1px solid #024b05;
   }
   .s-text {
     color: #36d33b;
@@ -36,103 +79,276 @@
   //   border: 2px solid blue;
   // }
   .to-top {
-    margin-top: 180px;
+    margin-top: 65px;
   }
-
 }
 //------------------------------------Dashboard-----------------
-.dashboard{
-    background-color: #010901;
-    margin: 0;
-    padding: 0;   
-  
-    .dashboard-logo{
-        height: 118;
-        width: 122px;
-        display: block;
-        margin: 20px auto;
-    }
-    .dashboard-btn {
-        background: linear-gradient(90deg, #024b05, #36d33b);
-        border-radius: 2px;
-        box-shadow: 0 0 5px 0 #36d63b;
-        border: 2px solid #36d63b;
-        padding: 13px 20px;
-        cursor: pointer;
-        width: 100%;
-        color: white;
-        margin-bottom: 15px;
-        font-weight: bold;
-      }
-      .other-btn {
-        color: white;
-        font-weight: bold;
-        padding: 9px 26px;
-        cursor: pointer;
-        background: #011101;
-        border-radius: 5px;
-        width: 100%;
-        margin-bottom: 15px;
-        border: 2px solid #012b04;
-      }
+.dashboard {
+  background-color: #010901;
+  margin: 0;
+  padding: 0;
+  border: 2px solid $second-color;
+  position: fixed;
+  width: 280px;
+  .dashboard-logo {
+    height: 118;
+    width: 122px;
+    display: block;
+    margin: 20px auto;
   }
+  
+ 
+  
+  .dashboard-btn {
+    background: linear-gradient(90deg, #024b05, #36d33b) !important;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 #36d63b;
+    border: 2px solid #36d63b;
+    padding: 13px 20px;
+    cursor: pointer;
+    width: 100%;
+    color: white !important;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .other-btn {
+    color: white;
+    font-weight: bold;
+    padding: 9px 26px;
+    cursor: pointer;
+    background: #011101;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #012b04;
+  }
+}
 //------------------------------------Account Page--------------
-.account{
+.account {
   background-image: url("./media/Hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  
   background-attachment: fixed;
+  padding-left: 100px;
+  padding-right: 100px;
+  @media only screen and (max-width: 600px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .card {
-    background-color: transparent;      
+    background-color: transparent;
+  }
+  h5{
+    color: $light-color;
+      font-weight: 900;
+      line-height: 1.5;
+      font-size: 19px;
   }
   .other-card {
-    border: 1px solid #024b05;    
+    border: 1px solid #024b05;
   }
-  .center-t{
+  .center-t {
     color: #36d33b;
     font-size: 2.125rem;
   }
-  .account-h{
+  .account-h {
     font-size: 1.5rem;
   }
-  .account-p{
+  .account-p {
     font-weight: 700;
   }
-  .account-card-first-item{
+  .account-card-first-item {
     display: flex;
     justify-content: space-between;
   }
 }
 //------------------------------------Swap Page-----------------
-.swap{
+.swap {
   background-image: url("./media/Hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
-  .swap-center{
-    border: 2px solid #012b04;
+  .swap-center {
+   
+    display: flex;
+    margin: 15px auto;
+  }
+  .mobile-card {
+    border: 2px solid $second-color;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .mobile-h2 {
+      font-size: 20px;
+      margin: 0 0 5px;
+      font-weight: 900;
+      color: $light-color;
+    }
+    .sub-header {
+      color: $light-color;
+      font-weight: 900;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .m-input-t {
+      color: $light-color;
+      font-weight: 900;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    input{
+      background: transparent;
+      border: none;
+      color: $light-color;
+    }
+    .mobile-input {
+      border-radius: 16px;
+      background: linear-gradient(
+        95.13deg,
+        rgba(22, 24, 48, 0.25),
+        rgba(46, 51, 92, 0.25)
+      );
+      box-shadow: 5px 5px 7px -5px #000;
+      padding: 10px 16px 20px;
+    }
+    .green-text{
+      color: $second-color;
+    }
+    .arrow{
+      display: flex;
+      justify-content: center;
+      color: $second-color;
+      
+    }
+    .mobile-para{
+      display: flex;
+      justify-content: space-between;
+    }
+    .gray-text{
+      color: $light-color;
+      font-weight: 900;
+    }
+    .input-img{
+      height: 20px;
+      width: 20px;
+    }
+    .mobile-btn{
+      background: linear-gradient(90deg, #024b05, #36d33b);
+      border-radius: 2px;
+      box-shadow: 0 0 5px 0 #36d63b;
+      border: 2px solid #36d63b;
+      padding: 13px 20px;
+      cursor: pointer;
+      width: 100%;
+      color: white;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
   }
 }
 //-----------------------------------Calculator Page---------------
-.calculator{
+.calculator {
   background-image: url("./media/Hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  .inner-calculator{    
+    display: flex;
+    margin: 15px auto;
+    border: 2px solid $second-color;
+    border-radius: 20px;
+  }
+  .cal-card-top{
+    font-size: 20px;
+    font-weight: 900;
+    color: gray;
+  }
+  input{
+    background: transparent;
+    border: none;
+    color: $light-color;
+  }
+  .top-cards{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .calculator-card{
+    
+    width: 100%;
+  }
+  .inner-input{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(118, 118, 118);
+    border-radius: 10px;
+    padding: 12px 12px;
+  }
+  .calculator-inputs{
+    display: flex;    
+    justify-content: space-between;
+  }
+  
+  .ranges{
+    display: flex;    
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .first-in-cal{
+    width: 48%;
+  }
 }
 //-----------------------------------Analytics Page----------------
-.analytics{
+.analytics {
   background-image: url("./media/Hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  
   background-attachment: fixed;
+  padding-left: 100px;
+  padding-right: 100px;
+  @media only screen and (max-width: 600px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .card {
+    background-color: transparent;
+  }
+  h5{
+    color: $light-color;
+      font-weight: 900;
+      line-height: 1.5;
+      font-size: 19px;
+  }
+  .other-card {
+    border: 1px solid #024b05;
+  }
+  .center-t {
+    color: #36d33b;
+    font-size: 2.125rem;
+  }
+  .account-h {
+    font-size: 1.5rem;
+  }
+  .account-p {
+    font-weight: 700;
+  }
+  .account-card-first-item {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 //------------------------------------Docs Page---------------------
-.docs{
+.docs {
   background-image: url("./media/Hero.png");
   background-repeat: no-repeat;
   background-size: cover;
