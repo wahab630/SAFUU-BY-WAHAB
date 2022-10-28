@@ -1,16 +1,10 @@
-.navbar{
+.topbar{
     background-color: #010901;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #0b6a0e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #0b6a0e;
     
 }
-
-.logo-img{
-    height: 30px;
-    width: 190px;
-}
-
 .header-btn{
   color: white;
   width: 201px;
@@ -19,19 +13,26 @@
   font-weight: bold;
   background-color: #34c439;
   font-size: 30px;
-    cursor: pointer;
+  cursor: pointer;
 }
 .canvas-btn{
-  background-color: #34c439 ;
-  width: 15%;
- margin-left: -220px;
+  background-color: #34c439 ; 
+  
+}
+.header-full{
+  display: flex;
+  justify-content: space-between;
+}
+.header-right{
+  display: flex;
+  justify-content: space-between;
 }
 .head-last-btn{
     background: linear-gradient(90deg,#024b05,#36d33b);
     border-radius: 2px;
     box-shadow: 0 0 5px 0 #36d63b;
     border: 2px solid #36d63b;
-    padding: 13px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     color: white;
     font-weight: bold;
@@ -51,14 +52,11 @@
     flex-direction: row;
     margin-top: 15px;
 }
-/* .canvas-body{
-    background-color: black !important;
-    width: 50%;
+@media only screen and (max-width: 600px){
+	.h-second-btn{
+    display: none;
   }
-  .offcanvas-header{
-    background-color: black;
-    width: 50%;
-  } */
+}
   .canvas{
     width: 250px !important;
     background-color: #010901;
